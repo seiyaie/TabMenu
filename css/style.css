@@ -1,0 +1,240 @@
+/*!
+reset
+------------------------------
+*/
+html {
+    color: #000;
+    background: #fff;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+caption,
+th {
+    text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+q:before,
+q:after {
+    content: "";
+}
+
+abbr,
+acronym {
+    border: 0;
+    font-variant: normal;
+}
+
+sup {
+    vertical-align: text-top;
+}
+
+sub {
+    vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select,
+button {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    font-size: 100%;
+    border-radius: 0;
+    border: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: inherit;
+}
+
+input,
+textarea,
+select {
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+    display: block;
+}
+
+button {
+    padding: 0;
+    cursor: pointer;
+}
+
+legend {
+    color: #000;
+}
+
+tbody {
+    -webkit-text-size-adjust: 100%;
+}
+
+main {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+svg {
+    display: block;
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*!
+layout > container
+------------------------------
+*/
+.l-container {
+    width: 90%;
+    margin: 90px auto 0;
+    max-width: 760px;
+}
+
+/*!
+menu
+------------------------------
+*/
+
+.menu {
+    display: flex;
+    height: 30px;
+}
+
+.menu-item {
+    font-weight: bold;
+    font-size: 18px;
+    flex: 1;
+    display: block;
+    text-align: center;
+    /* width: 100%; */
+    height: 40px;
+    transition: opacity 0.4s;
+}
+
+
+.btn {
+    border-bottom: 2px solid blue;
+    opacity: 0.5;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.btn.is-active {
+    opacity: 1;
+}
+
+/*!
+contents
+------------------------------
+*/
+
+.content {
+    display: none;
+    opacity: 0;
+    padding: 20px;
+}
+
+.content.is-active {
+    display: block;
+    opacity: 1;
+}
